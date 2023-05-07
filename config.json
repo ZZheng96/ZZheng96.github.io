@@ -1,19 +1,7 @@
 {
-  "inbounds": [
-    {
-      "port": 8500, // 监听端口
-      "protocol": "shadowsocks",
-      "settings": {
-        "method": "aes-256-gcm",
-        "ota": true, // 是否开启 OTA
-        "password": "ssv2password"
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",  
-      "settings": {}
-    }
-  ]
+    "server":["::0","0.0.0.0"],
+    "server_port":8500,
+    "encryption_method":"aes-256-gcm",
+    "password":"ssv2password",
+    "plugin":"v2ray-plugin"
 }
